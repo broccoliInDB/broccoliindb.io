@@ -10,3 +10,9 @@ Kakao clone coding for practicing HTML, CSS
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+Chats
+Settings
+Find
+More
+Friends
