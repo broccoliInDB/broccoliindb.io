@@ -31,25 +31,81 @@
       <h1 class="header__title">채팅</h1>
     </div>
     <div class="header__column">
-      <span class="header__icon" href="find.html">
-        <i class="fas fa-search">
-        </i>
+      <span class="header__icon">
+        <a href="find.html" class="header__icon-link">
+          <i class="fas fa-search"></i>
+        </a>
       </span>
-      <span class="header__icon" href="chat.html">
-        <i class="far fa-comment"></i>
+      <span class="header__icon">
+        <a href="chat.html" class="header__icon-link">
+          <i class="far fa-comment"></i>
+        </a>
       </span>
-      <span class="header__icon" href="music.html">
-        <i class="fas fa-music"></i>
+      <span class="header__icon">
+        <a href="music.html" class="header__icon-link">
+          <i class="fas fa-music"></i>
+        </a>
       </span>
-      <span class="header__icon" href="setting.html">
-        <i class="fas fa-cog"></i>
+      <span class="header__icon">
+        <a href="setting.html" class="header__icon-link">
+          <i class="fas fa-cog"></i>
+        </a>
       </span>
     </div>
   </header>
+  <main class="chats">
+    <ul class="chats__list">
+      <li class="chats__chat chat">
+        <div class="chat__column">
+          <div class="chat__avatars avatars">
+            <ul class="avatars__list">
+              <li class="avatars__list-item">
+                <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu">
+              </li>
+              <li class="avatars__list-item">
+                <img src="images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu">
+              </li>
+              <li class="avatars__list-item">
+                <img src="images/avatars/zzangu/yuri.jpeg" alt="yuri">
+              </li>
+              <li class="avatars__list-item">
+                <img src="images/avatars/zzangu/hooni.jpeg" alt="hooni">
+              </li>
+            </ul>
+          </div>
+          <div class="chat__contents contents">
+            <span class="contents__icon">
+              <i class="fas fa-comments"></i>
+            </span>
+            <span class="contents__members members">
+              <ul class="members__list">
+                <li class="member__list-item">짱구</li>
+                <li class="member__list-item">철수</li>
+                <li class="member__list-item">유리</li>
+                <li class="member__list-item">훈이</li>
+              </ul>
+              <span class="members__count">4</span>
+            </span>
+            <span class="contents__notification">
+              <i class="fas fa-bell-slash"></i>
+            </span>
+            <div class="contents__preview preview">
+              <div class="preview preview_ellipse">
+                짱구 절친은 누구라고 생각해?
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="chat__column">
+          <span class="chat__timestamp">오전 9:26</span>
+        </div>
+      </li>
+    </ul>
+  </main>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="friend.html" class="nav__list-item">
+        <a href="friends.html" class="nav__list-item">
           <i class="far fa-user"></i>
         </a>
       </li>
