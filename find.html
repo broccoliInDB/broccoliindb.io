@@ -12,46 +12,38 @@
 
 <body>
   <div class="status-bar">
-    <span class="status-bar__column">
+    <div class="status-bar__column">
       <div class="status-bar__clock">2:13</div>
-    </span>
-    <span class="status-bar__column">
-      <div class="status-bar__speaker">
-        <i class="fas fa-volume-up"></i>
-      </div>
-      <div class="status-bar__location">
-        <i class="fas fa-map-marker-alt"></i>
-      </div>
-      <div class="status-bar__network">
+    </div>
+    <div class="status-bar__column">
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-map-marker-alt"></i>
+      <span class="status-bar__network">
         <img src="./images/lte.svg" alt="lte.svg" width="16px" height="16px" class="status-bar__lte">
-      </div>
-      <div class="status-bar__signal">
-        <i class="fas fa-signal"></i>
-      </div>
-      <div class="status-bar__battery">
-        <i class="fas fa-battery-three-quarters"></i>
-      </div>
-    </span>
+      </span>
+      <i class="fas fa-signal"></i>
+      <i class="fas fa-battery-three-quarters"></i>
+    </div>
   </div>
   <header class="header">
-    <span class="header__column">
+    <div class="header__column">
       <h1 class="header__title">검색</h1>
-    </span>
-    <span class="header__column">
-      <a class="header__find" href="find.html">
+    </div>
+    <div class="header__column">
+      <span class="header__icon" href="find.html">
         <i class="fas fa-search">
         </i>
-      </a>
-      <a class="header__chat" href="chat.html">
+      </span>
+      <span class="header__icon" href="chat.html">
         <i class="far fa-comment"></i>
-      </a>
-      <a class="header__music" href="music.html">
+      </span>
+      <span class="header__icon" href="music.html">
         <i class="fas fa-music"></i>
-      </a>
-      <a class="header__setting" href="setting.html">
+      </span>
+      <span class="header__icon" href="setting.html">
         <i class="fas fa-cog"></i>
-      </a>
-    </span>
+      </span>
+    </div>
   </header>
   <nav class="nav">
     <ul class="nav__bottom">
