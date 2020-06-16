@@ -7,6 +7,7 @@
   <meta name="description" content="Welcome to my Kakao Clone">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico">
   <title>chat | kakao Clone</title>
 </head>
@@ -14,14 +15,14 @@
 <body>
   <div class="status-bar">
     <div class="status-bar__column">
-      <div class="status-bar__clock">2:13</div>
+      <span class="status-bar__clock">2:13</span>
     </div>
     <div class="status-bar__column">
       <i class="fas fa-volume-up"></i>
       <i class="fas fa-map-marker-alt"></i>
-      <span class="status-bar__network">
-        <img src="./images/lte.svg" alt="lte.svg" width="16px" height="16px" class="status-bar__lte">
-      </span>
+      <div class="status-bar__network">
+        <img src="./images/lte.svg" alt="lte.svg" class="status-bar__lte">
+      </div>
       <i class="fas fa-signal"></i>
       <i class="fas fa-battery-three-quarters"></i>
     </div>
@@ -53,6 +54,31 @@
       </span>
     </div>
   </header>
+  <main class="chats">
+    <div class="chats__column">
+      <div class="chats__avatars avatars">
+        <ul class="avatars__list">
+          <li class="avatars__item">
+            <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu">
+          </li>
+        </ul>
+      </div>
+      <div class="chats__contents">
+        <div class="chats__contents-top">
+          <span class="chats__contents-icon">나</span>
+          <span class="chats__members">최용범</span>
+          <span class="chats__last-message">http://en.bem.info/methodology/key-concept/</span>
+        </div>
+        <div class="chats__contents-bottom"></div>
+      </div>
+    </div>
+    <div class="chats__column">
+      <div class="chats__infos">
+        <span class="chats__timestamp">오후 2:02</span>
+        <span class="chat__alert-new-messages"></span>
+      </div>
+    </div>
+  </main>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
@@ -61,8 +87,11 @@
         </a>
       </li>
       <li class="nav__item">
-        <a href="chat.html" class="nav__list-item">
-          <i class="fas fa-comment"></i>
+        <a class="nav__list-item bubble">
+          <div class="bubble__container">
+            <i class="fas fa-comment"></i>
+            <div class="bubble__container-item">14</div>
+          </div>
         </a>
       </li>
       <li class="nav__item">

@@ -27,32 +27,125 @@
     </div>
   </div>
   <header class="header">
-    <div class="header__column">
-      <h1 class="header__title">검색</h1>
-    </div>
-    <div class="header__column">
-      <span class="header__icon">
-        <a href="find.html" class="header__icon-link">
-          <i class="fas fa-search"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="chat.html" class="header__icon-link">
-          <i class="far fa-comment"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="music.html" class="header__icon-link">
-          <i class="fas fa-music"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="setting.html" class="header__icon-link">
-          <i class="fas fa-cog"></i>
-        </a>
-      </span>
+    <div class="header__find">
+      <i class="fas fa-arrow-left"></i>
+      <input type="text" placeholder="검색">
+      <a href="qu-scan.html" class="header__icon-link">
+        <i class="fas fa-qrcode"></i>
+      </a>
     </div>
   </header>
+  <main class="search">
+    <div class="search__up-to-date-emos">
+      <div class="search__title title">
+        <div class="title__column">
+          <h5 class="title__name">최신 이모티콘</h5>
+        </div>
+        <div class="title__column">
+          <span class="title__more">
+            <h5>더보기</h5>
+            <i class="fas fa-angle-right"></i>
+          </span>
+        </div>
+      </div>
+      <div class="search__up-to-date-emos-contents emos slide-contents">
+        <ul class="slide-contents__list">
+          <li class="slide-contents__list-item">
+            <div class="emos__image">
+              <img src="images/emos/emoticons.png" alt="emoticons">
+            </div>
+            <div class="emos__name">emoticons</div>
+          </li>
+        </ul>
+      </div>
+      <div class="search__dots"></div>
+    </div>
+    <div class="search__recent">
+      <div class="search__title">최근검색</div>
+      <div class="search__recent-user">
+        <ul class="search__recent-user-list">
+          <li class="search__recent-user-list-item item">
+            <div class="item__avatar">
+              <img src="images/avatars/bonobono/bonobono.jpeg" alt="bonobono">
+            </div>
+            <div class="item__name">보노보노</div>
+          </li>
+        </ul>
+      </div>
+      <div class="search__recent-channel channels">
+        <ul class="channels">
+          <li class="channels__item item">
+            <span class="item__column">
+              <i class="fas fa-search"></i>
+            </span>
+            <span class="item__column">
+              노랑풍선
+            </span>
+            <span class="item__column">
+              <i class="fas fa-times"></i>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="search__buttons">
+        <button>자동저장 끄기</button>
+        <button>전체삭제</button>
+      </div>
+    </div>
+    <div class="search__popular-channel">
+      <div class="search__title title">
+        <div class="title__column">
+          <h5 class="title__name">친구 급상승 채널</h5>
+        </div>
+        <div class="title__column">
+          <h5>집계기준 : 6월 11일</h5>
+        </div>
+      </div>
+      <div class="search__popular-channel-contents contents">
+        <ul class="contents__list">
+          <li class="contents__list-item item">
+            <span class="item__column">1</span>
+            <span class="item__column contents">
+              <div class="contents__avatar">
+                <img src="images/avatars/bonobono/nuburi.jpeg" alt="nuburi">
+              </div>
+              <div class="contents__title title">
+                <div class="title__name">
+                  <h5>G마켓</h5>
+                </div>
+                <div class="title__etc etc">
+                  <div class="etc__column">
+                    <i class="fas fa-arrow-up"></i>
+                  </div>
+                  <div class="etc__column">
+                    10478명 증가
+                  </div>
+                </div>
+                <div class="title__etc2 etc2">
+                  <div class="etc2__column">
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div class="etc2__column">
+                    챗봇
+                  </div>
+                </div>
+              </div>
+            </span>
+            <span class="item__column">
+              <div class="item__add-channel">
+                <i class="fas fa-comment"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </span>
+          </li>
+        </ul>
+        <div class="search__popular-channel-contents-etc">
+          <h5>더보기</h5>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </main>
   <nav class="nav">
     <ul class="nav__list">
       <li class="nav__item">
