@@ -55,29 +55,41 @@
     </div>
   </header>
   <main class="chats">
-    <div class="chats__column">
-      <div class="chats__avatars avatars">
-        <ul class="avatars__list">
-          <li class="avatars__item">
-            <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu">
-          </li>
-        </ul>
-      </div>
-      <div class="chats__contents">
-        <div class="chats__contents-top">
-          <span class="chats__contents-icon">나</span>
-          <span class="chats__members">최용범</span>
-          <span class="chats__last-message">http://en.bem.info/methodology/key-concept/</span>
+    <ul class="chats__list">
+      <li class="chats__item">
+        <div class="chats__column">
+          <div class="chats__contents-container">
+            <div class="chats__avatars avatars">
+              <ul class="avatars__list">
+                <li class="avatars__item">
+                  <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu">
+                </li>
+              </ul>
+            </div>
+            <div class="chats__contents contents">
+              <div class="contents__top chat">
+                <span class="chat__icon">나</span>
+                <span class="chat__members">최용범</span>
+              </div>
+              <div class="contents__bottom chat">
+                <span class="chat__last-message">http://en.bem.info/methodology/key-concept/</span>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="chats__contents-bottom"></div>
-      </div>
-    </div>
-    <div class="chats__column">
-      <div class="chats__infos">
-        <span class="chats__timestamp">오후 2:02</span>
-        <span class="chat__alert-new-messages"></span>
-      </div>
-    </div>
+        <div class="chats__column">
+          <div class="chats__contents chats__contents-right contents">
+            <div class="contents__top chat">
+              <span class="chats__timestamp">6월 15일</span>
+            </div>
+            <div class="contents__bottom chat">
+              <span class="chat__alert-new-messages">1</span>
+            </div>
+          </div>
+
+        </div>
+      </li>
+    </ul>
   </main>
   <nav class="nav">
     <ul class="nav__list">
