@@ -7,176 +7,650 @@
   <meta name="description" content="Welcome to my Kakao Clone">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="shortcut icon" href="images/favicon.ico">
   <title>친구 | kakao Clone</title>
 </head>
 
-<body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <div class="status-bar__clock">2:13</div>
+<body class="friend-fragment">
+  <div class="position">
+    <div class="position__top">
+      <div class="position__top_fixed">
+        <div class="status-bar">
+          <div class="status-bar__column">
+            <div class="status-bar__clock">2:13</div>
+          </div>
+          <div class="status-bar__column">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="status-bar__network">
+              <img src="./images/lte.svg" alt="lte.svg" class="status-bar__lte">
+            </div>
+            <i class="fas fa-signal"></i>
+            <i class="fas fa-battery-three-quarters"></i>
+          </div>
+        </div>
+        <header class="header">
+          <div class="header__column">
+            <h1 class="header__title">친구</h1>
+          </div>
+          <div class="header__column">
+            <span class="header__icon">
+              <a href="find.html">
+                <i class="fas fa-search"></i>
+              </a>
+            </span>
+            <span class="header__icon">
+              <a href="add-user.html">
+                <i class="fas fa-user-plus"></i>
+              </a>
+            </span>
+            <span class="header__icon">
+              <a href="music.html">
+                <i class="fas fa-music"></i>
+              </a>
+            </span>
+            <span class="header__icon">
+              <a href="setting.html">
+                <i class="fas fa-cog"></i>
+              </a>
+            </span>
+          </div>
+        </header>
+      </div>
     </div>
-    <div class="status-bar__column">
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-map-marker-alt"></i>
-      <span class="status-bar__network">
-        <img src="./images/lte.svg" alt="lte.svg" width="16px" height="16px" class="status-bar__lte">
-      </span>
-      <i class="fas fa-signal"></i>
-      <i class="fas fa-battery-three-quarters"></i>
+    <div class="position__middle">
+      <main class="position__main">
+        <section class="profile">
+          <div class="profile__column">
+            <div class="profile__content content">
+              <div class="content__avatars avatars">
+                <ul class="avatars__list">
+                  <li class="avatars__item">
+                    <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu" class="avatar-img">
+                  </li>
+                </ul>
+              </div>
+              <div class="content__main">
+                <div class="content__main_top chat">
+                  <span class="chat__members">철수</span>
+                </div>
+                <div class="content__main_bottom chat">
+                  <span class="chat__status">짱구야 난 그거 필요없거등 너 다 가져 ㅡ,.ㅡ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="profile__column">
+            <div class="profile__content content">
+              <div class="content__right">
+                <div class="contents__right_top chat">
+                  <span class="chat__bgm">지나간다 - 김범수
+                    <i class="fas fa-play"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <div class="title">
+          <div class="title__column">
+            <span>생일인 친구</span>
+          </div>
+          <div class="title__column">
+            <i class="fas fa-angle-up"></i>
+          </div>
+        </div>
+        <section class="birth">
+          <div class="birth__column">
+            <div class="birth__content content">
+              <div class="content__avatars avatars">
+                <ul class="avatars__list">
+                  <div class="avatars__container container">
+                    <div class="container__birth">
+                      <li class="avatars__item">
+                        <i class="fas fa-birthday-cake fa-2x fa-inverse"></i>
+                      </li>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+              <div class="content__main">
+                <div class="content__main_top chat">
+                  <span class="chat__members">친구의 생일을 확인해보세요!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="birth__column">
+            <div class="birth__content content">
+              <div class="content__right">
+                <div class="contents__right_top chat">
+                  <span class="chat__count">1
+                    <i class="fas fa-chevron-right"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr>
+        <div class="title">
+          <div class="title__column">
+            <span>즐겨찾기</span>
+          </div>
+          <div class="title__column">
+            <i class="fas fa-angle-up"></i>
+          </div>
+        </div>
+        <section class="favorite">
+          <ul class="favorite__list">
+            <li class="favorite__friend">
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/hooni.jpeg" alt="hooni" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">훈이</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">짱구야 그거 원래 내꺼잖아ㅠㅠ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">모든 날, 모든순간 - (Every day...
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="favorite__friend">
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/yuri.jpeg" alt="yuri" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">유리</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">짱구야 얼른 그거 훈이 돌려줘!!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">서울(Seoul) - 레트로펑키
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="favorite__friend">
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">짱구</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">아!! 훈이 꺼였구나 ㅋㅋㅋ 나 하나만 주라</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="favorite__column">
+                <div class="favorite__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">Love poem - 아이유
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <hr>
+        <section class="channel">
+          <div class="title">
+            <div class="title__column">
+              <span>채널</span>
+            </div>
+            <div class="title__column">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <ul class="channel__list">
+            <li class="channel__item">
+              <div class="channel__column">
+                <div class="channel__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <div class="avatars__container container">
+                        <div class="container__channel">
+                          <li class="avatars__item">
+                            <i class="fas fa-comment"></i>
+                          </li>
+                          <span class="avatars__item_comment">ch</span>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">채널</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="channel__column">
+                <div class="channel__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__count">33
+                        <i class="fas fa-chevron-right"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="channel__item">
+              <div class="channel__column">
+                <div class="channel__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <div class="avatars__container container">
+                        <div class="container__bvlgari">
+                          <li class="avatars__item">
+                            <span>BVLGARI</span>
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">불가리</span>
+                      <span class="chat__icon_ad">AD</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">불가리 비제로원 락 컬렉션</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <hr>
+        <section class="friends">
+          <div class="title">
+            <div class="title__column">
+              <span>친구 7</span>
+            </div>
+            <div class="title__column">
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+          <ul class="friends__list">
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/bonobono/bonobono.jpeg" alt="bonobono" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">보노보노</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">슝슝슝</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/hooni.jpeg" alt="hooni" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">훈이</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">짱구야 그거 원래 내꺼잖아ㅠㅠ</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">모든 날, 모든순간 - (Every day...
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/bonobono/nuburi.jpeg" alt="nuburi" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">너부리</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">발로빵!!!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">짱구</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">아!! 훈이 꺼였구나 ㅋㅋㅋ 나 하나만 주라</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">Love poem - 아이유
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/bonobono/porori.jpeg" alt="porori" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">포로리</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">왜~~~</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/yuri.jpeg" alt="yuri" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">유리</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">짱구야 얼른 그거 훈이 돌려줘!!</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">서울(Seoul) - 레트로펑키
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="friends__friend">
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__avatars avatars">
+                    <ul class="avatars__list">
+                      <li class="avatars__item">
+                        <img src="./images/avatars/zzangu/maengu.jpeg" alt="maengu" class="avatar-img">
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="content__main">
+                    <div class="content__main_top chat">
+                      <span class="chat__members">맹구</span>
+                    </div>
+                    <div class="content__main_bottom chat">
+                      <span class="chat__status">훌쩍</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="friends__column">
+                <div class="friends__content content">
+                  <div class="content__right">
+                    <div class="contents__right_top chat">
+                      <span class="chat__bgm">Love poem - 아이유
+                        <i class="fas fa-play"></i>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <!-- <header class="friends__header">
+            <div class="friends__friend friend friend_lg">
+              <div class="friend__column">
+                <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
+                <div class="friend__contents contents">
+                  <div class="contents__user-name">짱구</div>
+                  <div class="contents__user-word">live with love, passion and courage</div>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__bgm">
+                  <span>지나간다-김범수</span>
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="friends__birth-day">
+            <h5 class="friends__title">생일인 친구</h5>
+            <div class="friends__friend friend">
+              <div class="friend__column">
+                <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
+                <div class="friend__contents contents">
+                  <div class="contents__user-name">친구의 생일을 확인해보세요!</div>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__birthday-counts counts-things">
+                  <span class="counts-things__count">1</span>
+                  <a class="counts-things__link">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="friends__favorite">
+            <h5 class="friends__title">즐겨찾기</h5>
+            <ul class="friends__list">
+              <li class="friends__friend friend">
+                <div class="friend__column">
+                  <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
+                  <div class="friend__contents contents">
+                    <div class="contents__user-name">짱구</div>
+                    <div class="contents__user-word">live with love, passion and courage</div>
+                  </div>
+                </div>
+                <div class="friend__column">
+                  <div class="friend__bgm">
+                    <span>지나간다-김범수</span>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="friends__channel">
+            <h5 class="friends__title">채널</h5>
+            <div class="friends__friend friend">
+              <div class="friend__column">
+                <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
+                <div class="friend__contents contents">
+                  <div class="contents__user-name">채널</div>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__channel-counts counts-things">
+                  <span class="counts-things__count">33</span>
+                  <a class="counts-things__link">
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="friends__friends">
+            <span class="friends__title-counts">
+              <h5 class="friends__title">친구</h5>
+              <h5 class="friends__counts">233</h5>
+            </span>
+            <ul class="friends__list">
+              <li class="friends__friend friend">
+                <div class="friend__column">
+                  <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
+                  <div class="friend__contents contents">
+                    <div class="contents__user-name">짱구</div>
+                    <div class="contents__user-word">live with love, passion and courage</div>
+                  </div>
+                </div>
+                <div class="friend__column">
+                  <div class="friend__bgm">
+                    <span>지나간다-김범수</span>
+                    <i class="fas fa-play"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div> -->
+        </section>
+      </main>
+    </div>
+    <div class="position__bottom">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="friends.html">
+              <i class="fas fa-user"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="index.html" class="bubble">
+              <div class="bubble__container">
+                <i class="far fa-comment"></i>
+                <div class="bubble__child">14</div>
+              </div>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="news.html">
+              <i class="fas fa-hashtag"></i>
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="more.html">
+              <i class="fas fa-ellipsis-h"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </div>
-  <header class="header">
-    <div class="header__column">
-      <h1 class="header__title">친구</h1>
-    </div>
-    <div class="header__column">
-      <span class="header__icon">
-        <a href="find.html" class="header__icon-link">
-          <i class="fas fa-search"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="add-user.html" class="header__icon-link">
-          <i class="fas fa-user-plus"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="music.html" class="header__icon-link">
-          <i class="fas fa-music"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="setting.html" class="header__icon-link">
-          <i class="fas fa-cog"></i>
-        </a>
-      </span>
-    </div>
-  </header>
-  <main class="friends">
-    <header class="friends__header">
-      <div class="friends__friend friend friend_lg">
-        <div class="friend__column">
-          <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
-          <div class="friend__contents contents">
-            <div class="contents__user-name">짱구</div>
-            <div class="contents__user-word">live with love, passion and courage</div>
-          </div>
-        </div>
-        <div class="friend__column">
-          <div class="friend__bgm">
-            <span>지나간다-김범수</span>
-            <i class="fas fa-play"></i>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="friends__birth-day">
-      <h5 class="friends__title">생일인 친구</h5>
-      <div class="friends__friend friend">
-        <div class="friend__column">
-          <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
-          <div class="friend__contents contents">
-            <div class="contents__user-name">친구의 생일을 확인해보세요!</div>
-          </div>
-        </div>
-        <div class="friend__column">
-          <div class="friend__birthday-counts counts-things">
-            <span class="counts-things__count">1</span>
-            <a class="counts-things__link">
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="friends__favorite">
-      <h5 class="friends__title">즐겨찾기</h5>
-      <ul class="friends__list">
-        <li class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
-            <div class="friend__contents contents">
-              <div class="contents__user-name">짱구</div>
-              <div class="contents__user-word">live with love, passion and courage</div>
-            </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__bgm">
-              <span>지나간다-김범수</span>
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="friends__channel">
-      <h5 class="friends__title">채널</h5>
-      <div class="friends__friend friend">
-        <div class="friend__column">
-          <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
-          <div class="friend__contents contents">
-            <div class="contents__user-name">채널</div>
-          </div>
-        </div>
-        <div class="friend__column">
-          <div class="friend__channel-counts counts-things">
-            <span class="counts-things__count">33</span>
-            <a class="counts-things__link">
-              <i class="fas fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="friends__friends">
-      <span class="friends__title-counts">
-        <h5 class="friends__title">친구</h5>
-        <h5 class="friends__counts">233</h5>
-      </span>
-      <ul class="friends__list">
-        <li class="friends__friend friend">
-          <div class="friend__column">
-            <img src="images/avatars/zzangu/zzangu.jpeg" alt="zzangu" class="friend__avatar">
-            <div class="friend__contents contents">
-              <div class="contents__user-name">짱구</div>
-              <div class="contents__user-word">live with love, passion and courage</div>
-            </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__bgm">
-              <span>지나간다-김범수</span>
-              <i class="fas fa-play"></i>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="friends.html" class="nav__list-item">
-          <i class="fas fa-user"></i>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="chat.html" class="nav__list-item">
-          <i class="far fa-comment"></i>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="news.html" class="nav__list-item">
-          <i class="fas fa-hashtag"></i>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="more.html" class="nav__list-item">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
 </body>
 
 </html>

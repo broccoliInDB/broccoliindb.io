@@ -1,0 +1,115 @@
+## 완전동일
+---
+status-bar
+  status-bar__column
+  status-bar__clock
+  status-bar__column
+  status-bar__network
+  status-bar__lte
+  icons...
+header
+  header__column
+  header__title
+  header__column*4
+  header__icon*4
+nav
+  nav__list
+  nav__item *4
+bubble
+  bubble__container
+  bubble__child
+
+## 비슷하게 반복
+### index
+---
+chats
+  chats__list
+  chats__item
+  chats__column
+  chats__content -> content
+  chats__column
+  chats__content -> content
+content
+  content__avatars -> avatars
+  content__main
+    content__main_top -> chat
+    content__main_bottom -> chat
+  content__right
+    content__right_top -> chat
+    content__right_bottom -> chat
+avatars
+  avatars__list
+  avatars__item
+chat
+  chat__icon
+  chat__members
+  chat__last-message
+  chat__timestamp
+  chat__alert-new-messages
+---
+### 친구
+#### 프로필
+profile
+  profile__column
+  profile__content -> content
+  profile__column
+  profile__content -> content
+content
+  content__avatars -> avatars
+  content__main
+    content__main_top -> chat
+    content__main_bottom -> chat
+  content__right
+    content__right_top -> chat
+avatars
+  avatars__list
+  avatars__container
+  avatars__item
+chat
+  chat__members
+  chat__status
+  chat__bgm
+  chat__icon_ad
+  chat__icon_birth
+
+#### 생일인친구
+title
+  title__column
+  title__column
+birth
+  birth__column
+  birth__content -> content
+  birth__column
+  birth__content -> content
+content
+  content__avatars -> avatars
+  content__main
+    content__main_top -> chat
+  content__right
+    content__right_top -> chat
+avatars
+  avatars__list
+  avatars__item
+chat
+  chat__members
+  chat__count
+#### 즐겨찾기
+title
+  title__column
+  title__column
+favorite
+  favorite__list
+  favorite__friend
+  favorite__column
+  favorite__content -> content
+  favorite__column
+  favorite__content -> content
+content
+  content__avatars -> avatars
+  content__main
+    content__main_top -> chat
+  content__right
+    content__right_top -> chat
+#### 채널
+#### 친구
+

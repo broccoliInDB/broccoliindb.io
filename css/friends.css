@@ -1,0 +1,201 @@
+.friend-fragment .position__top {
+  position: fixed;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid red;
+  z-index: 1;
+}
+
+.friend-fragment .position__top_fixed {
+  margin: 20px 15px;
+}
+
+.friend-fragment .position__middle {
+  position: fixed;
+  top: 110px;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.friend-fragment .position__main {
+  margin: 0 15px;
+}
+
+.friend-fragment .position__bottom {
+  position: fixed;
+  background-color: green;
+  /* background-color: #f9f9f9; */
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  z-index: 1;
+}
+
+.profile,
+.birth,
+.favorite__friend,
+.channel__item,
+.friends__friend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/**
+* friend-fragment title
+*/
+
+.friend-fragment .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.friend-fragment .title * {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  opacity: 0.7;
+}
+
+/**
+* contents
+*/
+
+.friend-fragment .content {
+  display: flex;
+  align-items: center;
+}
+
+.friend-fragment .content__main,
+.friend-fragment .content__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 3rem;
+}
+
+.friend-fragment .content__right {
+  align-items: flex-end;
+  min-width: 3rem;
+}
+
+.friend-fragment .content__main_top {
+  margin-bottom: 0.3rem;
+}
+
+/**
+* avatars
+*/
+.friend-fragment .avatars {
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  margin-right: 0.6rem;
+}
+
+.friend-fragment .avatars__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.friend-fragment .avatars__item {
+  min-width: 3.5rem;
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-fragment .avatars__item > .avatar-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 35%;
+  border: 0.01px solid #ffffff;
+  text-align: center;
+}
+
+.friend-fragment .avatars__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.friend-fragment .container__birth {
+  background-color: #cd7fe0;
+  border-radius: 35%;
+  border: 0.01px solid #ffffff;
+}
+
+.friend-fragment .container__channel {
+  background-color: #fae001;
+  border-radius: 35%;
+  border: 0.01px solid #ffffff;
+}
+
+.friend-fragment .container__bvlgari {
+  background-color: #212529;
+  border-radius: 35%;
+  border: 0.01px solid #ffffff;
+  font-size: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.friend-fragment .avatars__container i {
+  font-size: 28px;
+}
+
+.friend-fragment .container__channel {
+  position: relative;
+}
+
+.friend-fragment .avatars__container .avatars__item_comment {
+  position: absolute;
+  top: 17px;
+  left: 19px;
+  color: #fae001;
+  font-weight: bold;
+}
+
+/**
+* chat
+*/
+
+.friend-fragment .chat__members {
+  font-weight: bold;
+}
+
+.friend-fragment .chat__members {
+  font-size: 0.8rem;
+}
+
+.friend-fragment .chat__status {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.friend-fragment .chat__bgm {
+  font-size: 0.7rem;
+  border: 1px solid #0eeb85;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.friend-fragment .chat__count {
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+.friend-fragment .chat__icon_ad {
+  font-size: 0.5rem;
+  opacity: 0.7;
+  padding: 0.05rem 0.2rem;
+  border-radius: 35%;
+  border: 1px solid #d6d8dc;
+}

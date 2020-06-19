@@ -13,111 +13,116 @@
 </head>
 
 <body>
-  <div class="status-bar">
-    <div class="status-bar__column">
-      <span class="status-bar__clock">2:13</span>
-    </div>
-    <div class="status-bar__column">
-      <i class="fas fa-volume-up"></i>
-      <i class="fas fa-map-marker-alt"></i>
-      <div class="status-bar__network">
-        <img src="./images/lte.svg" alt="lte.svg" class="status-bar__lte">
+  <div class="index-fragment">
+    <div class="position position__top_fixed">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">2:13</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-volume-up"></i>
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="status-bar__network">
+            <img src="./images/lte.svg" alt="lte.svg" class="status-bar__lte">
+          </div>
+          <i class="fas fa-signal"></i>
+          <i class="fas fa-battery-three-quarters"></i>
+        </div>
       </div>
-      <i class="fas fa-signal"></i>
-      <i class="fas fa-battery-three-quarters"></i>
+      <header class="header">
+        <div class="header__column">
+          <h1 class="header__title">채팅</h1>
+        </div>
+        <div class="header__column">
+          <span class="header__icon">
+            <a href="find.html">
+              <i class="fas fa-search"></i>
+            </a>
+          </span>
+          <span class="header__icon">
+            <a href="chat.html">
+              <i class="far fa-comment"></i>
+            </a>
+          </span>
+          <span class="header__icon">
+            <a href="music.html">
+              <i class="fas fa-music"></i>
+            </a>
+          </span>
+          <span class="header__icon">
+            <a href="setting.html">
+              <i class="fas fa-cog"></i>
+            </a>
+          </span>
+        </div>
+      </header>
     </div>
+    <main class="chats">
+      <ul class="chats__list">
+        <li class="chats__item">
+          <div class="chats__column">
+            <div class="chats__content content">
+              <div class="content__avatars avatars">
+                <ul class="avatars__list">
+                  <li class="avatars__item">
+                    <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu" class="avatar-img">
+                  </li>
+                </ul>
+              </div>
+              <div class="content__main">
+                <div class="content__main_top chat">
+                  <span class="chat__icon">나</span>
+                  <span class="chat__members">철수</span>
+                </div>
+                <div class="content__main_bottom chat">
+                  <span class="chat__last-message">http://en.bem.info/methodology/key-concept/</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chats__column">
+            <div class="chats__content content">
+              <div class="content__right">
+                <div class="contents__right_top chat">
+                  <span class="chat__timestamp">6월 15일</span>
+                </div>
+                <div class="content__right_bottom chat">
+                  <span class="chat__alert-new-messages">1</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="friends.html">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="chat.html" class="bubble">
+            <div class="bubble__container">
+              <i class="fas fa-comment"></i>
+              <div class="bubble__child">14</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="news.html">
+            <i class="fas fa-hashtag"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <header class="header">
-    <div class="header__column">
-      <h1 class="header__title">채팅</h1>
-    </div>
-    <div class="header__column">
-      <span class="header__icon">
-        <a href="find.html" class="header__icon-link">
-          <i class="fas fa-search"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="chat.html" class="header__icon-link">
-          <i class="far fa-comment"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="music.html" class="header__icon-link">
-          <i class="fas fa-music"></i>
-        </a>
-      </span>
-      <span class="header__icon">
-        <a href="setting.html" class="header__icon-link">
-          <i class="fas fa-cog"></i>
-        </a>
-      </span>
-    </div>
-  </header>
-  <main class="chats">
-    <ul class="chats__list">
-      <li class="chats__item">
-        <div class="chats__column">
-          <div class="chats__contents-container">
-            <div class="chats__avatars avatars">
-              <ul class="avatars__list">
-                <li class="avatars__item">
-                  <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu">
-                </li>
-              </ul>
-            </div>
-            <div class="chats__contents contents">
-              <div class="contents__top chat">
-                <span class="chat__icon">나</span>
-                <span class="chat__members">최용범</span>
-              </div>
-              <div class="contents__bottom chat">
-                <span class="chat__last-message">http://en.bem.info/methodology/key-concept/</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="chats__column">
-          <div class="chats__contents chats__contents-right contents">
-            <div class="contents__top chat">
-              <span class="chats__timestamp">6월 15일</span>
-            </div>
-            <div class="contents__bottom chat">
-              <span class="chat__alert-new-messages">1</span>
-            </div>
-          </div>
-
-        </div>
-      </li>
-    </ul>
-  </main>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a href="friends.html" class="nav__list-item">
-          <i class="far fa-user"></i>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__list-item bubble">
-          <div class="bubble__container">
-            <i class="fas fa-comment"></i>
-            <div class="bubble__container-item">14</div>
-          </div>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="news.html" class="nav__list-item">
-          <i class="fas fa-hashtag"></i>
-        </a>
-      </li>
-      <li class="nav__item">
-        <a href="more.html" class="nav__list-item">
-          <i class="fas fa-ellipsis-h"></i>
-        </a>
-      </li>
-    </ul>
-  </nav>
 </body>
 
 </html>
