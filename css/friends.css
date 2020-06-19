@@ -1,11 +1,12 @@
 .friend-fragment .position__top {
   position: fixed;
-  background-color: red;
+  background-color: #ffffff;
   top: 0;
   left: 0;
   width: 100%;
-  border-top: 1px solid red;
+  border-top: 1px solid #ffffff;
   z-index: 1;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .friend-fragment .position__top_fixed {
@@ -27,8 +28,7 @@
 
 .friend-fragment .position__bottom {
   position: fixed;
-  background-color: green;
-  /* background-color: #f9f9f9; */
+  background-color: #f9f9f9;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -81,7 +81,6 @@
 
 .friend-fragment .content__right {
   align-items: flex-end;
-  min-width: 3rem;
 }
 
 .friend-fragment .content__main_top {
@@ -180,11 +179,8 @@
   opacity: 0.7;
 }
 
-.friend-fragment .chat__bgm {
+.friend-fragment .chat__container {
   font-size: 0.7rem;
-  border: 1px solid #0eeb85;
-  padding: 5px;
-  border-radius: 30px;
 }
 
 .friend-fragment .chat__count {
@@ -199,3 +195,28 @@
   border-radius: 35%;
   border: 1px solid #d6d8dc;
 }
+
+.content__right_top .chat__container {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid #0eeb85;
+  padding: 0.5rem;
+  border-radius: 30px;
+}
+.content__right .chat__text {
+  max-width: 8rem;
+  min-width: 3rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+/**
+* 노트
+윈도우 사이즈가 작아지면서 텍스트를 ellipsis 처리하고 싶었으나 해당 처리를 위해서는 width를 고정체크할 필요가 있었고 html css상으로는
+width 부분이 스테틱하기 때문에 어려운 부분이 있음
+
+자바스크립트로 하는게 좋을 듯함.
+*/
