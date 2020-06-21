@@ -29,6 +29,47 @@ hr {
 }
 
 /**
+* position
+*/
+
+.position__top {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.position__top .position__content {
+  margin: 0.6rem;
+}
+
+.position__middle {
+  position: fixed;
+  top: 4.5rem;
+  bottom: 4rem;
+  left: 0;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.position__middle .position__content {
+  margin: 0.3rem 1rem 0 1rem;
+}
+
+.position__bottom {
+  position: fixed;
+  background-color: #f9f9f9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-top: 1px solid #f5f5f5;
+  z-index: 1;
+}
+
+/**
 * status-bar
 */
 .status-bar {
@@ -36,23 +77,26 @@ hr {
   justify-content: space-between;
   align-items: center;
   opacity: 0.6;
-  margin-bottom: 1.8rem;
+  margin: 0 0.1rem 1rem 0.1rem;
 }
 .status-bar * {
   font-size: 1rem;
 }
 
 .status-bar__clock {
+  vertical-align: middle;
+  font-size: 1rem;
   font-weight: bold;
 }
-.status-bar__network {
-  vertical-align: middle;
+
+.status-bar__icon {
   display: relative;
+  vertical-align: middle;
   width: 1rem;
   height: 1rem;
   display: inline-block;
 }
-.status-bar__lte {
+.status-bar__icon.status-bar__icon_lte {
   display: absolute;
   width: 100%;
   height: 100%;
@@ -64,7 +108,6 @@ hr {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
 }
 
 .header__icon {
@@ -82,14 +125,15 @@ hr {
   margin: 1rem 2rem;
 }
 
-.nav__item > * {
+.nav__item {
   width: 2rem;
   height: 2rem;
-  text-align: center;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.bubble__container {
+.bubble__parent {
   position: relative;
 }
 .bubble__child {
@@ -100,7 +144,6 @@ hr {
   min-height: 0.6rem;
   min-width: 0.6rem;
   font-weight: bold;
-  font-family: "Nanum Gothic";
   text-shadow: 0.2px 0 #ffffff;
   color: #ffffff;
   background-color: #e45f3e;
@@ -109,4 +152,49 @@ hr {
   padding: 0.17rem;
   text-align: center;
   vertical-align: middle;
+}
+
+/**
+* text
+*/
+
+.text {
+  vertical-align: middle;
+  font-size: 1rem;
+}
+
+.text.text_bold {
+  font-weight: bold;
+}
+
+.text.text_bolder {
+  font-weight: bolder;
+}
+
+.text.text_grey {
+  opacity: 0.7;
+}
+
+.text.text_050 {
+  font-size: 0.5rem;
+}
+
+.text.text_070 {
+  font-size: 0.7rem;
+}
+
+.text.text_080 {
+  font-size: 0.8rem;
+}
+
+.text.text_120 {
+  font-size: 1.2rem;
+}
+
+.text.text_175 {
+  font-size: 1.75rem;
+}
+
+.text.text_200 {
+  font-size: 2rem;
 }
