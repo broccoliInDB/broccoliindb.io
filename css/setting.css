@@ -1,0 +1,45 @@
+.setting-fragment .main {
+  bottom: 0;
+}
+
+.setting-fragment .information__item,
+.setting-fragment .management__item,
+.setting-fragment .help {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.setting-fragment .information__item:hover,
+.setting-fragment .management__item:hover,
+.setting-fragment .help:hover {
+  background-color: #d8dee9;
+}
+
+.setting-fragment .information__icon,
+.setting-fragment .management__icon,
+.setting-fragment .help__icon {
+  width: 2rem;
+  padding: 1.5rem 0;
+}
+
+.setting-fragment .content__new {
+  background-color: red;
+  padding: 0.1rem 0.2rem;
+  border-radius: 50%;
+  font-size: 0.5rem;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.setting-fragment .content__version,
+.setting-fragment .content__info {
+  margin-top: 0.4rem;
+  font-size: 0.7rem;
+}
+
+.setting-fragment hr {
+  margin: 1.5rem 0;
+}
