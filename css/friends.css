@@ -78,6 +78,15 @@
 * avatar 대신 있는 container
 */
 
+.friend-fragment .profile .content__container {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  min-width: 4rem;
+  min-height: 4rem;
+  margin-right: 0.6rem;
+}
+
 .friend-fragment .content__container {
   position: relative;
   width: 3.5rem;
@@ -125,6 +134,15 @@
 /**
 * avatars
 */
+
+.friend-fragment .profile__lg .avatars {
+  display: grid;
+  width: 5rem;
+  height: 5rem;
+  min-width: 5rem;
+  min-height: 5rem;
+  margin-right: 0.6rem;
+}
 
 .friend-fragment .avatars {
   display: grid;
