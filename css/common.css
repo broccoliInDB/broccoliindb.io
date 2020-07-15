@@ -155,52 +155,7 @@ hr {
   vertical-align: middle;
 }
 
-/**
-* text
-*/
-
-.text {
-  vertical-align: middle;
-  font-size: 1rem;
-}
-
-.text.text_bold {
-  font-weight: bold;
-}
-
-.text.text_bolder {
-  font-weight: bolder;
-}
-
-.text.text_grey {
-  opacity: 0.7;
-}
-
-.text.text_050 {
-  font-size: 0.5rem;
-}
-
-.text.text_070 {
-  font-size: 0.7rem;
-}
-
-.text.text_080 {
-  font-size: 0.8rem;
-}
-
-.text.text_120 {
-  font-size: 1.2rem;
-}
-
-.text.text_175 {
-  font-size: 1.75rem;
-}
-
-.text.text_200 {
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 600px) and (max-width: 2000px) {
+@media screen and (min-width: 471px) and (max-width: 2000px) {
   body {
     background-color: yellow;
   }
