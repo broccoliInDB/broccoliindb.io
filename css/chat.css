@@ -169,7 +169,7 @@
   background-color: #ffffff;
 }
 
-.add__item:not(.add__item_keyboard):not(.add__item_imoticons) {
+.add__item:not(.add__item_keyboard):not(.add__item_emoticons) {
   cursor: pointer;
 }
 

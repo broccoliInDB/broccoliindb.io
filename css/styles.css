@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
-@import "setting.css";
 @import "reset.css";
 @import "normalize.css";
 @import "common.css";
+@import "more.css";
+@import "setting.css";
 @import "friends.css";
 @import "chat.css";
 @import "index.css";
