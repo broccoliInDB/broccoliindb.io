@@ -199,3 +199,12 @@ hr {
 .text.text_200 {
   font-size: 2rem;
 }
+
+@media screen and (min-width: 600px) and (max-width: 2000px) {
+  body {
+    background-color: yellow;
+  }
+  body .container {
+    display: none;
+  }
+}
