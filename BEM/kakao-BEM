@@ -228,4 +228,24 @@ chat
   chat__bgm
 
 
+## chat
+
+position
+  position__top
+  position__content > header
+  position__middle
+  position__content > chat
+  position__bottom
+  position__content nav
+
+header
+  header__column
+  header__column
+  
+icon 
+  icon__arrow & icon__arrow_left
+  icon__search
+  icon__bars
+
+
 

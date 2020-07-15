@@ -1,0 +1,314 @@
+.chat-fragment input {
+  border: none;
+  line-height: 1.2rem;
+}
+
+.chat-fragment .header {
+  color: #ffffff;
+  background-color: #5c2ebe;
+  line-height: 1.2rem;
+  box-shadow: 1px 2px 4px 0px rgb(80, 29, 199);
+}
+
+.chat-fragment .main {
+  color: #ffffff;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  background: linear-gradient(
+      19deg,
+      rgb(33, 212, 253, 0) 0%,
+      rgb(183, 33, 255, 0.5) 50%
+    ),
+    url("../images/chat_background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 2.325rem;
+  padding-bottom: 0;
+}
+
+.chat-fragment .main .chat {
+  padding-bottom: 0.3rem;
+}
+
+.chat-fragment .main.show.keyboard {
+  bottom: calc(13.8rem + 2.325rem);
+}
+
+.chat-fragment .main.show.attachment {
+  bottom: calc(18.4rem + 2.325rem);
+}
+
+.chat-fragment .chat .date {
+  background: linear-gradient(
+    0deg,
+    rgb(242, 46, 125) 0%,
+    rgb(184, 49, 143) 54%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+  width: 12rem;
+  padding: 0.3rem;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+}
+
+/* incoming S */
+.chat-fragment .chat__incoming-msg {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-fragment .chat__incoming-msg .avatar {
+  align-self: flex-start;
+}
+
+.chat-fragment .chat__incoming-msg .chat__date {
+  align-self: flex-end;
+  padding-left: 0.5rem;
+  font-size: 0.7rem;
+  min-width: 3.5rem;
+}
+/* incoming E */
+
+/* outcoming S */
+.chat-fragment .chat__outcoming-msg {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-fragment .chat__outcoming-msg .chat__date {
+  align-self: flex-end;
+  padding-right: 0.5rem;
+  font-size: 0.7rem;
+  min-width: 3.5rem;
+}
+
+/* outcoming E */
+
+/* avatar S */
+.chat-fragment .avatar {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  min-height: 2rem;
+  min-width: 2rem;
+  margin-right: 0.3rem;
+}
+
+.chat-fragment .avatars__avatar-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 40%;
+}
+/* avatar E */
+
+/* content S */
+.chat-fragment .content .chat__from,
+.chat-fragment .content .content__speech-bubble {
+  font-size: 0.8rem;
+  word-break: break-all;
+}
+.chat-fragment .content .chat__from {
+  padding-bottom: 0.3rem;
+}
+.chat-fragment .content .content__speech-bubble {
+  color: #000000;
+  padding: 0.5rem;
+  background: #ffffff;
+}
+
+.chat-fragment .chat__incoming-msg .content .content__speech-bubble {
+  border-radius: 0 1rem 1rem 1rem;
+}
+
+.chat-fragment .chat__outcoming-msg .content .content__speech-bubble {
+  border-radius: 1rem 0 1rem 1rem;
+}
+
+.add {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  width: 100%;
+}
+
+.add__row:first-child {
+  background-color: #f9f9f9;
+  border-top: 1px solid #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+.add__row:not(:first-child):not(.show) {
+  display: none;
+}
+
+.add__row.show {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.add__item:not(.add__item_keyboard):not(.add__item_imoticons) {
+  cursor: pointer;
+}
+
+.add__item.add__item_keyboard {
+  width: 85%;
+}
+
+/* When Show, keyboard , hash S */
+.add__row.show.keyboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.2rem;
+  width: 100%;
+  background-color: black;
+}
+
+.add__row.show.keyboard .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.2rem 0;
+}
+
+.add__row.show.keyboard .row .row__icon {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__row.show.keyboard .row .row__number,
+.add__row.show.keyboard .row .row__letter {
+  width: 9%;
+  height: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__row.show.keyboard .row .row__number {
+  background-color: orange;
+}
+
+.add__row.show.keyboard .row .row__letter {
+  background-color: yellow;
+}
+
+.add__row.show.keyboard .row .row__shift,
+.add__row.show.keyboard .row .row__enter,
+.add__row.show.keyboard .row .row__special,
+.add__row.show.keyboard .row .row__backspace {
+  background-color: white;
+  width: 8%;
+  height: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__row.show.keyboard .row .row__space {
+  background-color: white;
+  width: 50%;
+  height: 2rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* When Show, keyboard , hash E */
+
+/* When Show, attachment S */
+.add__row.show.attachment {
+  width: 100%;
+}
+
+.add__row.show.attachment .attachment__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+.add__row.show.attachment .attachment__item {
+  width: 25%;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.add__row.show.attachment .attachment__icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add__row.show.attachment .attachment__icon.album {
+  background-color: #9cc95e;
+}
+.add__row.show.attachment .attachment__icon.camera {
+  background: #6e94db;
+}
+.add__row.show.attachment .attachment__icon.gift {
+  background: #f2656e;
+}
+.add__row.show.attachment .attachment__icon.capture {
+  background: #5bbdd8;
+}
+.add__row.show.attachment .attachment__icon.address {
+  background: #efd423;
+}
+.add__row.show.attachment .attachment__icon.voice {
+  background: #f89957;
+}
+.add__row.show.attachment .attachment__icon.music {
+  background: #67c881;
+}
+.add__row.show.attachment .attachment__icon.map {
+  background: #bd9d84;
+}
+.add__row.show.attachment .attachment__icon.file {
+  background: #d84851;
+}
+
+.add__row.show.attachment .attachment__name {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  background-color: white;
+}
+/* When Show, attachment E */

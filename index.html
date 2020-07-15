@@ -13,89 +13,53 @@
 </head>
 
 <body class="index-fragment">
-  <div class="position">
-    <div class="position__top">
-      <div class="position__content">
-        <div class="status-bar">
-          <div class="status-bar__column">
-            <span class="status-bar__clock">2:13</span>
-          </div>
-          <div class="status-bar__column">
-            <i class="fas fa-volume-up"></i>
-            <i class="fas fa-map-marker-alt"></i>
-            <div class="status-bar__icon">
-              <img src="./images/lte.svg" alt="lte.svg" class="status-bar__icon status-bar__icon_lte">
-            </div>
-            <i class="fas fa-signal"></i>
-            <i class="fas fa-battery-three-quarters"></i>
-          </div>
+  <div class="container">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">2:13</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="status-bar__icon">
+          <img src="./images/lte.svg" alt="lte.svg" class="status-bar__icon status-bar__icon_lte">
         </div>
-        <header class="header">
-          <div class="header__column">
-            <h1>채팅</h1>
-          </div>
-          <div class="header__column">
-            <span class="header__icon">
-              <a href="find.html">
-                <i class="fas fa-search"></i>
-              </a>
-            </span>
-            <span class="header__icon">
-              <a href="chat.html">
-                <i class="far fa-comment"></i>
-              </a>
-            </span>
-            <span class="header__icon">
-              <a href="music.html">
-                <i class="fas fa-music"></i>
-              </a>
-            </span>
-            <span class="header__icon">
-              <a href="setting.html">
-                <i class="fas fa-cog"></i>
-              </a>
-            </span>
-          </div>
-        </header>
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-battery-three-quarters"></i>
       </div>
     </div>
-    <div class="position__middle">
-      <main class="position__content">
-        <div class="chats">
-          <ul class="chats__list">
-            <li class="chats__item">
-              <div class="chats__column">
-                <div class="chats__content content">
-                  <ul class="content__avatars content__avatars_single avatars">
-                    <li class="avatars__avatar">
-                      <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu" class="avatars__avatar-img">
-                    </li>
-                  </ul>
-                  <div class="content__main">
-                    <div class="content__main content__main_top chat">
-                      <span class="chat__room-icon">나</span>
-                      <span class="chat__members">철수</span>
-                    </div>
-                    <div class="content__main content__main_bottom chat">
-                      <span class="chat__last-message">http://en.bem.info/methodology/key-concept/</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="chats__column">
-                <div class="chats__content content">
-                  <div class="content__right">
-                    <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">6월 15일</span>
-                    </div>
-                    <div class="content__right content__right_bottom chat">
-                      <span class="chat__alert-new-messages">1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="chats__item">
+    <header class="header">
+      <div class="header__column">
+        <h1>채팅</h1>
+      </div>
+      <div class="header__column">
+        <span class="header__icon">
+          <a href="find.html">
+            <i class="fas fa-search"></i>
+          </a>
+        </span>
+        <span class="header__icon">
+          <a href="chat.html">
+            <i class="far fa-comment"></i>
+          </a>
+        </span>
+        <span class="header__icon">
+          <a href="music.html">
+            <i class="fas fa-music"></i>
+          </a>
+        </span>
+        <span class="header__icon">
+          <a href="setting.html">
+            <i class="fas fa-cog"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <div class="chats">
+        <ul class="chats__list">
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_triangle avatars">
@@ -125,15 +89,51 @@
                 <div class="chats__content content">
                   <div class="content__right">
                     <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">어제</span>
+                      <span class="chat__timestamp">오후 3:34</span>
                     </div>
                     <div class="content__right content__right_bottom chat">
                       <span class="chat__alert-new-messages">7</span>
                     </div>
                   </div>
                 </div>
-            </li>
-            <li class="chats__item">
+              </div>
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
+              <div class="chats__column">
+                <div class="chats__content content">
+                  <ul class="content__avatars content__avatars_single avatars">
+                    <li class="avatars__avatar">
+                      <img src="./images/avatars/bonobono/nuburi.jpeg" alt="nuburi" class="avatars__avatar-img">
+                    </li>
+                  </ul>
+                  <div class="content__main">
+                    <div class="content__main content__main_top chat">
+                      <span class="chat__members">너부리</span>
+                    </div>
+                    <div class="content__main content__main_bottom chat">
+                      <span class="chat__last-message">철수야 보노보노 혹시 봤어???</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chats__column">
+                <div class="chats__content content">
+                  <div class="content__right">
+                    <div class="content__right content__right_top chat">
+                      <span class="chat__timestamp">오후 1:20</span>
+                    </div>
+                    <div class="content__right content__right_bottom chat">
+                      <span class="chat__alert-new-messages">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_rectangle avatars">
@@ -165,7 +165,7 @@
                 <div class="chats__content content">
                   <div class="content__right">
                     <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">오전 10:42</span>
+                      <span class="chat__timestamp">오전 10:52</span>
                     </div>
                     <div class="content__right content__right_bottom chat">
                       <span class="chat__alert-new-messages">3</span>
@@ -173,39 +173,11 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
-              <div class="chats__column">
-                <div class="chats__content content">
-                  <ul class="content__avatars content__avatars_single avatars">
-                    <li class="avatars__avatar">
-                      <img src="./images/avatars/bonobono/nuburi.jpeg" alt="nuburi" class="avatars__avatar-img">
-                    </li>
-                  </ul>
-                  <div class="content__main">
-                    <div class="content__main content__main_top chat">
-                      <span class="chat__members">너부리</span>
-                    </div>
-                    <div class="content__main content__main_bottom chat">
-                      <span class="chat__last-message">철수야 보노보노 혹시 봤어???</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="chats__column">
-                <div class="chats__content content">
-                  <div class="content__right">
-                    <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">어제</span>
-                    </div>
-                    <div class="content__right content__right_bottom chat">
-                      <span class="chat__alert-new-messages">1</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -235,8 +207,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -258,7 +232,7 @@
                 <div class="chats__content content">
                   <div class="content__right">
                     <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">오전 9:28</span>
+                      <span class="chat__timestamp">오전 10:28</span>
                     </div>
                     <div class="content__right content__right_bottom chat">
                       <span class="chat__alert-new-messages">1</span>
@@ -266,8 +240,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -296,8 +272,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -319,7 +297,7 @@
                 <div class="chats__content content">
                   <div class="content__right">
                     <div class="content__right content__right_top chat">
-                      <span class="chat__timestamp">오전 11:02</span>
+                      <span class="chat__timestamp">오전 9:40</span>
                     </div>
                     <div class="content__right content__right_bottom chat">
                       <span class="chat__alert-new-messages">1</span>
@@ -327,8 +305,44 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
+              <div class="chats__column">
+                <div class="chats__content content">
+                  <ul class="content__avatars content__avatars_single avatars">
+                    <li class="avatars__avatar">
+                      <img src="./images/avatars/zzangu/cheolsu.jpeg" alt="cheolsu" class="avatars__avatar-img">
+                    </li>
+                  </ul>
+                  <div class="content__main">
+                    <div class="content__main content__main_top chat">
+                      <span class="chat__room-icon">나</span>
+                      <span class="chat__members">철수</span>
+                    </div>
+                    <div class="content__main content__main_bottom chat">
+                      <span class="chat__last-message">http://en.bem.info/methodology/key-concept/</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="chats__column">
+                <div class="chats__content content">
+                  <div class="content__right">
+                    <div class="content__right content__right_top chat">
+                      <span class="chat__timestamp">6월 15일</span>
+                    </div>
+                    <div class="content__right content__right_bottom chat">
+                      <span class="chat__alert-new-messages">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -357,8 +371,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -387,8 +403,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -417,8 +435,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -447,8 +467,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -477,8 +499,10 @@
                   </div>
                 </div>
               </div>
-            </li>
-            <li class="chats__item">
+            </a>
+          </li>
+          <li class="chats__item">
+            <a href="chat.html" class="chats__item-link">
               <div class="chats__column">
                 <div class="chats__content content">
                   <ul class="content__avatars content__avatars_single avatars">
@@ -507,40 +531,38 @@
                   </div>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
-      </main>
-    </div>
-    <div class="position__bottom">
-      <nav class="position__content nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="friends.html">
-              <i class="far fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="chat.html" class="bubble">
-              <div class="bubble__parent">
-                <i class="fas fa-comment"></i>
-                <div class="bubble__child">14</div>
-              </div>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="news.html">
-              <i class="fas fa-hashtag"></i>
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="more.html">
-              <i class="fas fa-ellipsis-h"></i>
             </a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="friends.html">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="index.html" class="bubble">
+            <div class="bubble__parent">
+              <i class="fas fa-comment"></i>
+              <div class="bubble__child">14</div>
+            </div>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="news.html">
+            <i class="fas fa-hashtag"></i>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </body>
 

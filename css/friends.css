@@ -1,11 +1,21 @@
-.profile,
-.birth,
-.favorite__friend,
-.channel__item,
-.friends__friend {
+.friend-fragment .profile a,
+.friend-fragment .birth a,
+.friend-fragment .favorite__friend a,
+.friend-fragment .channel__item a,
+.friend-fragment .friends__friend a {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.friend-fragment .profile a:hover,
+.friend-fragment .birth a:hover,
+.friend-fragment .favorite__friend a:hover,
+.friend-fragment .channel__item a:hover,
+.friend-fragment .friends__friend a:hover {
+  background-color: #d8dee9;
 }
 
 /**
@@ -15,7 +25,7 @@
 .friend-fragment .title {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
 .friend-fragment .title * {

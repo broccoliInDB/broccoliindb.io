@@ -1,7 +1,13 @@
-.chats__item {
+.index-fragment .chats__item a {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.index-fragment .chats__item a:hover {
+  background-color: #d8dee9;
 }
 
 /**
