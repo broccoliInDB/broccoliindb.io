@@ -105,6 +105,10 @@ hr {
   margin-left: 1rem;
 }
 
+.header__icon {
+  margin-right: 0.5rem;
+}
+
 /**
 * nav
 */

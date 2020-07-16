@@ -156,7 +156,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0.5rem;
+  padding: 1rem 1rem;
   width: 100%;
 }
 
@@ -169,12 +169,22 @@
   background-color: #ffffff;
 }
 
+.add__item {
+  font-size: 1.4rem;
+}
+
 .add__item:not(.add__item_keyboard):not(.add__item_emoticons) {
   cursor: pointer;
 }
 
 .add__item.add__item_keyboard {
-  width: 85%;
+  width: 70%;
+}
+
+.add__item.add__item_keyboard:focus {
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(79, 140, 168, 1);
+  -moz-box-shadow: 0px 0px 3px 3px rgba(79, 140, 168, 1);
+  box-shadow: 0px 0px 3px 3px rgba(79, 140, 168, 1);
 }
 
 /* When Show, keyboard , hash S */
@@ -307,7 +317,7 @@
 }
 
 .add__row.show.attachment .attachment__name {
-  font-size: 1rem;
+  font-size: 0.7rem;
   padding: 0.5rem 0;
   background-color: white;
 }

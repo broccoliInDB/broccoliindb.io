@@ -1,5 +1,5 @@
 .more-fragment .main {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .more-fragment .profile a {
@@ -241,7 +241,7 @@
 
 .more-fragment .ad__list {
   position: relative;
-  width: 88.125rem;
+  width: 73.3125rem;
   height: 16.25rem;
   display: flex;
   justify-content: center;
@@ -253,7 +253,7 @@
 .more-fragment .item1 {
   position: absolute;
   left: 0;
-  width: 29.375rem;
+  width: 24.4375rem;
   height: 16.25rem;
   padding: 1rem;
   box-sizing: border-box;
@@ -261,8 +261,8 @@
 
 .more-fragment .item2 {
   position: absolute;
-  left: 29.375rem;
-  width: 29.375rem;
+  left: 24.4375rem;
+  width: 24.4375rem;
   height: 16.25rem;
   padding: 1rem;
   box-sizing: border-box;
@@ -270,8 +270,8 @@
 
 .more-fragment .item3 {
   position: absolute;
-  left: 58.75rem;
-  width: 29.375rem;
+  left: 48.875rem;
+  width: 24.4375rem;
   height: 16.25rem;
   padding: 1rem;
   box-sizing: border-box;
@@ -290,10 +290,10 @@
   }
   40%,
   60% {
-    transform: translateX(-29.375rem);
+    transform: translateX(-24.4375rem);
   }
   80%,
   100% {
-    transform: translateX(-58.75rem);
+    transform: translateX(-48.875rem);
   }
 }
