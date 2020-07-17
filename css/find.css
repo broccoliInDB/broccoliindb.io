@@ -1,0 +1,320 @@
+.find-fragment input {
+  border: none;
+  width: 80%;
+  justify-self: flex-start;
+}
+
+.find-fragment .header {
+  line-height: 1.2rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.find-fragment .main {
+  padding-left: 0;
+  padding-right: 0;
+  bottom: 0;
+  padding-bottom: 0;
+}
+
+/**
+* find-fragment title
+*/
+
+.find-fragment .title:not(.etc) {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.find-fragment .title * {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: #636363;
+}
+
+/* find recommend S */
+
+.find-fragment .recommend__container {
+  animation: moveRecommend 7.5s linear alternate infinite;
+}
+
+.find-fragment .recommend__list {
+  position: relative;
+  width: 200%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.find-fragment .recommend__item {
+  width: 50%;
+}
+
+.find-fragment .channel__container .item__list,
+.find-fragment .emoticon__container .item__list {
+  display: flex;
+  width: 100%;
+  height: 9rem;
+}
+
+.find-fragment .recommend__list .item__item {
+  position: relative;
+  width: 33.3%;
+}
+
+.find-fragment .recommend__list .item__item img {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 1.2rem);
+  top: 0;
+  cursor: pointer;
+}
+
+.find-fragment .recommend__list .item__name {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0.8rem;
+}
+
+.dots {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.dots .item {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0.1rem;
+  background-color: #000000;
+}
+
+.dots .dot:nth-child(1) {
+  animation: moveDot 7.5s step-end infinite alternate-reverse forwards;
+}
+
+.dots .dot:nth-child(2) {
+  animation: moveDot 7.5s step-end infinite alternate forwards;
+}
+
+@keyframes moveRecommend {
+  0% {
+    transform: translateX(0%);
+  }
+  40% {
+    transform: translateX(0%);
+  }
+  60% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveDot {
+  0% {
+    opacity: 0.5;
+  }
+  40% {
+    opacity: 0.5;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* find recommend E */
+
+/* recent S*/
+
+.find-fragment .recent .recent__list.friends,
+.find-fragment .recent .recent__list.channels .recent__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.find-fragment .recent .recent__list.channels .recent__item:hover {
+  background-color: #d8dee9;
+}
+
+.find-fragment .recent .recent__list.friends .recent__item {
+  width: 25%;
+  margin: 0.5rem;
+}
+
+.find-fragment .recent .recent__item:hover {
+  background-color: #d8dee9;
+}
+
+.find-fragment .recent .recent__contact {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.find-fragment .recent .recent__contact .contact__avatar img {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0.3rem;
+  border-radius: 15px;
+}
+
+.find-fragment .recent .recent__contact .contact__name {
+  font-size: 0.7rem;
+}
+
+.find-fragment .recent .contact__remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.7rem;
+  color: #636363;
+}
+
+.find-fragment .recent .recent__list.channels .recent__item {
+  padding: 0.5rem 1rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+}
+
+.find-fragment .recent .recent__list.channels .recent__item i {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  color: #636363;
+}
+
+.find-fragment .recent__buttons {
+  text-align: right;
+  font-size: 0.8rem;
+  margin: 1rem;
+}
+
+.find-fragment .recent__buttons button {
+  background-color: transparent;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* recent E */
+
+/* popular S */
+.find-fragment .popular__item {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.find-fragment .popular__item:hover {
+  background-color: #d8dee9;
+}
+
+.find-fragment .popular__container .content {
+  display: flex;
+  align-items: center;
+}
+
+.find-fragment .popular__container .content__rank {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.find-fragment .popular__container .content__avatar {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-left: 0.5rem;
+}
+
+.find-fragment .popular__container .content__avatar img {
+  position: absolute;
+  padding: 0.3rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.find-fragment .popular__container .content .content__main {
+  margin-left: 0.5rem;
+}
+
+.find-fragment .popular__container .content .content__count {
+  margin-top: 0.2rem;
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.find-fragment .popular__container .content .content__count i {
+  color: red;
+}
+
+.find-fragment .popular__container .popular__add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.find-fragment .popular__container .popular__bubble {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.find-fragment .popular__container .popular__bubble .fa-comment {
+  font-size: 1.3rem;
+  margin-right: 0.1rem;
+}
+
+.find-fragment .popular__container .popular__add .fa-plus {
+  font-size: 0.2;
+}
+
+.find-fragment .popular__container .ch {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: bold;
+  top: 0;
+  left: 0;
+  padding-left: 0.1rem;
+  padding-bottom: 0.1rem;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.7rem;
+}
+/* popular E */
+
+.find-fragment .title.etc {
+  text-align: right;
+  margin-top: 1rem;
+  padding-right: 1rem;
+}

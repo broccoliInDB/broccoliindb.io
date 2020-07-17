@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Broccoli">
+  <meta name="description" content="Welcome to my Kakao Clone">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>찾기 | kakao Clone</title>
+</head>
+
+<body class="find-fragment">
+  <div class="container">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">2:13</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-map-marker-alt"></i>
+        <div class="status-bar__icon">
+          <img src="./images/lte.svg" alt="lte.svg" class="status-bar__icon status-bar__icon_lte">
+        </div>
+        <i class="fas fa-signal"></i>
+        <i class="fas fa-battery-three-quarters"></i>
+      </div>
+    </div>
+    <header class="header">
+      <div class="header__column">
+        <span class="header__icon">
+          <a href="index.html">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </span>
+      </div>
+      <input type="text" class="header__find" placeholder="검색">
+      <div class="header__column">
+        <span class="header__icon">
+          <a href="#">
+            <i class="fas fa-qrcode"></i>
+          </a>
+        </span>
+      </div>
+    </header>
+    <main class="main">
+      <section class="recommend">
+        <section class="recommend__container">
+          <ul class="recommend__list">
+            <li class="recommend__item item channel">
+              <div class="channel__container">
+                <div class="title">
+                  <div class="title__column">
+                    <span>추천 채널</span>
+                  </div>
+                  <div class="title__column">
+                    <span>더 보기</span>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <ul class="item__list">
+                  <li class="item__item">
+                    <div class="item__avatar">
+                      <img src="images/onelhouse.png" alt="">
+                    </div>
+                    <div class="item__name">오늘의집</div>
+                  </li>
+                  <li class="item__item">
+                    <div class="item__avatar">
+                      <img src="images/wanted.png" alt="">
+                    </div>
+                    <div class="item__name">원티드</div>
+                  </li>
+                  <li class="item__item item">
+                    <div class="item__avatar">
+                      <img src="images/myHoneyLovely.png" alt="">
+                    </div>
+                    <div class="item__name">여보좋은하루보내</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="recommend__item item emoticon">
+              <div class="emoticon__container">
+                <div class="title">
+                  <div class="title__column">
+                    <span>추천 이모티콘</span>
+                  </div>
+                  <div class="title__column">
+                    <span>더 보기</span>
+                    <i class="fas fa-angle-right"></i>
+                  </div>
+                </div>
+                <ul class="item__list">
+                  <li class="item__item">
+                    <div class="item__avatar">
+                      <img src="images/lifeFucked.jpeg" alt="">
+                    </div>
+                    <div class="item__name">인생존망</div>
+                  </li>
+                  <li class="item__item">
+                    <div class="item__avatar">
+                      <img src="images/kakao.jpeg" alt="">
+                    </div>
+                    <div class="item__name">카카오프렌즈</div>
+                  </li>
+                  <li class="item__item item">
+                    <div class="item__avatar">
+                      <img src="images/mrTorot.jpeg" alt="">
+                    </div>
+                    <div class="item__name">미스터트롯</div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <ul class="dots">
+          <li class="dot">
+            <div class="item"></div>
+          </li>
+          <li class="dot">
+            <div class="item"></div>
+          </li>
+        </ul>
+      </section>
+      <hr>
+      <section class="recent">
+        <div class="title">
+          <span>최근 검색</span>
+        </div>
+        <ul class="recent__list friends">
+          <li class="recent__item">
+            <div class="recent__contact contact">
+              <div class="contact__avatar">
+                <img src="images/avatars/bonobono/bonobono.jpeg" alt="bonobono">
+              </div>
+              <div class="contact__name">보노보노</div>
+              <div class="contact__remove">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </li>
+          <li class="recent__item">
+            <div class="recent__contact contact">
+              <div class="contact__avatar">
+                <img src="images/avatars/slamdunk/kangbackho.jpg" alt="kangbackho">
+              </div>
+              <div class="contact__name">강백호</div>
+              <div class="contact__remove">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </li>
+          <li class="recent__item">
+            <div class="recent__contact contact">
+              <div class="contact__avatar">
+                <img src="images/avatars/slamdunk/seotaewoong.jpeg" alt="seotaewoong">
+              </div>
+              <div class="contact__name">서태웅</div>
+              <div class="contact__remove">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </li>
+          <li class="recent__item">
+            <div class="recent__contact contact">
+              <div class="contact__avatar">
+                <img src="images/avatars/bonobono/porori.jpeg" alt="porori">
+              </div>
+              <div class="contact__name">포로리</div>
+              <div class="contact__remove">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <hr>
+        <ul class="recent__list channels">
+          <li class="recent__item">
+            <div class="recent__column channels__item">
+              <i class="fas fa-search"></i>
+              <span class="recent__name">아모레퍼시픽</span>
+            </div>
+            <div class="recent__column">
+              <i class="fas fa-times"></i>
+            </div>
+          </li>
+          <li class="recent__item">
+            <div class="recent__column">
+              <i class="fas fa-search"></i>
+              <span class="recent__name">원티드</span>
+            </div>
+            <div class="recent__column">
+              <i class="fas fa-times"></i>
+            </div>
+          </li>
+        </ul>
+        <div class="recent__buttons">
+          <button>자동저장끄기</button>
+          <button>전체삭제</button>
+        </div>
+      </section>
+      <hr>
+      <section class="popular">
+        <div class="title">
+          <div class="title__column">
+            <span>친구 급상승 채널</span>
+          </div>
+          <div class="title__column">
+            <span>집계 기준 7월 14일</span>
+          </div>
+        </div>
+        <div class="popular__container">
+          <ul class="popular__list">
+            <li class="popular__item">
+              <div class="popular__column content">
+                <div class="content__rank">1</div>
+                <div class="content__avatar">
+                  <div class="avatar">
+                    <img src="images/11st.png" alt="11st">
+                  </div>
+                </div>
+                <div class="content__main">
+                  <div class="content__title">11번가</div>
+                  <div class="content__count">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>13942 증가</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__column popular__add">
+                <div class="popular__bubble">
+                  <i class="fas fa-comment"></i>
+                  <div class="ch">Ch</div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="popular__column content">
+                <div class="content__rank">2</div>
+                <div class="content__avatar">
+                  <div class="avatar">
+                    <img src="images/dabang.png" alt="dabang">
+                  </div>
+                </div>
+                <div class="content__main">
+                  <div class="content__title">다방</div>
+                  <div class="content__count">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>8396 증가</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__column popular__add">
+                <div class="popular__bubble">
+                  <i class="fas fa-comment"></i>
+                  <div class="ch">Ch</div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="popular__column content">
+                <div class="content__rank">3</div>
+                <div class="content__avatar">
+                  <div class="avatar">
+                    <img src="images/gickbang.png" alt="gickbang">
+                  </div>
+                </div>
+                <div class="content__main">
+                  <div class="content__title">직방</div>
+                  <div class="content__count">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>8009 증가</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__column popular__add">
+                <div class="popular__bubble">
+                  <i class="fas fa-comment"></i>
+                  <div class="ch">Ch</div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="popular__column content">
+                <div class="content__rank">4</div>
+                <div class="content__avatar">
+                  <div class="avatar">
+                    <img src="images/gmarket.png" alt="gmarket">
+                  </div>
+                </div>
+                <div class="content__main">
+                  <div class="content__title">g마켓</div>
+                  <div class="content__count">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>7999 증가</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__column popular__add">
+                <div class="popular__bubble">
+                  <i class="fas fa-comment"></i>
+                  <div class="ch">Ch</div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </li>
+            <li class="popular__item">
+              <div class="popular__column content">
+                <div class="content__rank">5</div>
+                <div class="content__avatar">
+                  <div class="avatar">
+                    <img src="images/onelhouse.png" alt="onelhouse">
+                  </div>
+                </div>
+                <div class="content__main">
+                  <div class="content__title">오늘의집</div>
+                  <div class="content__count">
+                    <i class="fas fa-arrow-up"></i>
+                    <span>6005 증가</span>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__column popular__add">
+                <div class="popular__bubble">
+                  <i class="fas fa-comment"></i>
+                  <div class="ch">Ch</div>
+                  <i class="fas fa-plus"></i>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="title etc">
+        <span>더보기</span>
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </main>
+</body>
+
+</html>
