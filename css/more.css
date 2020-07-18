@@ -241,13 +241,13 @@
 
 .more-fragment .ad .ad__list {
   position: relative;
-  background-color: yellow;
   width: 300%;
+  height: 13rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
-  animation: moveAd 9s linear infinite alternate;
+  animation: moveAd 10s linear infinite alternate;
 }
 
 .more-fragment .ad .ad__item {
@@ -257,7 +257,7 @@
   justify-content: center;
   align-items: center;
   width: 33.33%;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 1rem;
 }
 
 .more-fragment .ad .ad__item:nth-child(1) {
@@ -293,5 +293,77 @@
   80%,
   100% {
     transform: translateX(-66.66%);
+  }
+}
+
+.more-fragment .ad__dots {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-fragment .dot__item {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0.5rem 0.2rem;
+}
+
+.more-fragment .dot:nth-child(1) .dot__item {
+  animation: moveAdDot1 10s step-start infinite alternate;
+}
+
+.more-fragment .dot:nth-child(2) .dot__item {
+  animation: moveAdDot2 10s step-start infinite alternate;
+}
+
+.more-fragment .dot:nth-child(3) .dot__item {
+  animation: moveAdDot3 10s step-start infinite alternate;
+}
+
+@keyframes moveAdDot1 {
+  0%,
+  20% {
+    opacity: 1;
+  }
+  40%,
+  60% {
+    opacity: 0.5;
+  }
+  80%,
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes moveAdDot2 {
+  0%,
+  20% {
+    opacity: 0.5;
+  }
+  40%,
+  60% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes moveAdDot3 {
+  0%,
+  20% {
+    opacity: 0.5;
+  }
+  40%,
+  60% {
+    opacity: 0.5;
+  }
+  80%,
+  100% {
+    opacity: 1;
   }
 }
